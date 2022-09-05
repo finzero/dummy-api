@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
 
-function base_response(statusCode, message, body) {
+function base_response(statusCode, message, data) {
   return {
     errorCode: statusCode,
     errorMessage: message,
-    body: body,
+    data: data,
   };
 }
 
